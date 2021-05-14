@@ -1,0 +1,11 @@
+{
+  "name": "crud_ajax",
+  "version": "1.0.0",
+  "description": "CRUD simple with Ajax",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Habraino",
+  "license": "ISC"
+}

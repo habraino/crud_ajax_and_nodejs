@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CRUD WITH AJAX</title>
+        <link rel="stylesheet" href="./css/bootstrap.css">
+    </head>
+    <body>
+        <div class="container mt-5">
+            <h1 class="alert-info text-center mb-5 p-3">
+                CRUD WITH AJAX
+            </h1>
+            <div class="row">
+                <form class="col-sm-5" id="myform">
+                    <h3 class="alert-warning text-center p-2">Add/Update Student</h3>
+                    <div>
+                        <label for="name" class="form-label">Name:</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div>
+                        <label for="email" class="form-label">E-mail:</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div>
+                        <label for="password" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <div class="mt-5">
+                        <button type="submit" class="btn btn-primary" id="btnAdd">Save</button>
+                    </div>
+                    <div id="msg"></div>
+                </form>
+
+                <div class="col-sm-7 text-center">
+                    <h3 class="alert-warning p-2">Show Student Informations</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">E-mail</th>
+                                <th scope="col">Password</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- arquivos javascript -->
+        <script src="./js/jquery-3.4.1.js" charset="utf-8"></script>
+        <script src="./js/bootstrap.js" charset="utf-8"></script>
+        <script src="./js/main.js" charset="utf-8"></script>
+    </body>
+</html>
